@@ -1,0 +1,11 @@
+- name: variables
+  hosts: LOCAL
+  connection: local #managing its own node, no need of credentials 
+  vars:
+  - COURSE: "DevOps with AWS"
+    DURATION: 120HR
+    TRAINER: Sivakumar
+  tasks:
+  - name: print the variable
+    ansible.builtin.debug:
+    msg: "course is {{ COURSE }}, Duration is {{ DURATION }}, trainer is {{ TRAINER }}"
