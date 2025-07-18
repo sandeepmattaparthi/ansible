@@ -7,7 +7,7 @@
    trainer: "siva kumar"
   tasks:
   - name: print the variables
-     vars:
+    vars:
       course:ansible
     ansible.builtin.debug:
        msg: "course is {{course}}, duration is {{duration}}, trainer is {{trainer}}"
