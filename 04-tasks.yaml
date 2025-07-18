@@ -2,15 +2,14 @@
   hosts: local
   connections: local
   tasks:
-  - name: PLAY1 AND TASK1
-    ansible.builtin.debug:
-     msg: "HELLO FROM PLAY1 and TASK1"
-
-
--  name: PLAY2
-   hosts: local
-   connections: local
-   tasks:
-   - name: PLAY2 AND TASK1
-     ansible.builtin.debug:
-      msg: HELLO FROM PLAY2 AND TASK1"
+    - name: PLAY1 AND TASK1
+      ansible.builtin.debug:
+        msg: HELLO FROM PLAY1 and TASK1
+- name: PLAY2
+  hosts: local
+  connections: local
+  tasks:
+    - name: PLAY2 AND TASK1
+      ansible.builtin.debug:
+      
+        msg: HELLO FROM PLAY2 AND TASK1"
