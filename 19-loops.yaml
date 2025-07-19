@@ -3,8 +3,8 @@
   become: yes
   tasks:
   - name: install packages
-    ansible.builtin.packages:
-      name: HELLO {{ "ITEM "}}
+    ansible.builtin.package:
+      name: "{{ item }}"
       state: installed
     loop:
     - gcc
