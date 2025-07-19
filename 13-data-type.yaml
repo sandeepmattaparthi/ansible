@@ -17,5 +17,5 @@
      contanirzation: docker
   tasks:
    - name: print course information
-      ansible.builtin.debug:
+     ansible.builtin.debug:
       msg: "couser is {{ COURSE }}, duration is {{ DURATION }}, trainer is {{ TRAINER }}, topics is {{ TOPICS }}, live is {{ LIVE }}, tools is {{ TOOLS }}"
