@@ -1,4 +1,4 @@
-- name : install and run nginx
+- name: install and run nginx
   host: local
   become: yes
   tasks: 
