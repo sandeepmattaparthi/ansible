@@ -1,8 +1,8 @@
-- name: Devops course information
+- name: DevOps course information
   hosts: local
   connection: local
   vars:
-   course: "DEVOPS WITH AWS"
+   course: "DevOps with AWS"
    duration: 120
    trainer: "SIVA KUMAR"
    topics:
